@@ -35,11 +35,11 @@
 
         <!-- Sub Menu -->
         <?php
+        $menuId = $m['id'];
         // SELECT *
         // FROM `ami_user_sub_menu` 
         // WHERE `menu_id` = $menuId
         // AND `is_active` = 1
-        $menuId = $m['id'];
         $querySubMenu = "SELECT *
                          FROM `ami_user_sub_menu` 
                          JOIN `ami_user_menu` 
